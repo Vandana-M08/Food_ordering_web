@@ -1,0 +1,22 @@
+            - name: terraform-compliance
+  # You may pin to the exact commit or the version.
+  # uses: terraform-compliance/github_action@0357bd3be2b0a5739f5c09c64366d50f64a9056f
+  uses: terraform-compliance/github_action@0.3.0
+  with:
+    # The output of terraform plan (in json)
+    plan: # optional
+    # The URL that is used for terraform-compliance features (without 'git:' prefix)
+    features: # optional
+    # Stops executing any more steps in a scenario on first failure.
+    quit-early: # optional
+    # Skip all the tests that is failed, but giving proper failure message
+    no-failure: # optional
+    # Do not output any scenarios, just write results or failures
+    silent: # optional
+    # SSH Private key that will be use on git authentication.
+    identity: # optional
+    # Speficic terraform-compliance version to be used.
+    version: # optional
+    # In case you are running a custom runner, this is the path where terraform-compliance executable is installed.
+    installed_path: # optional
+          
